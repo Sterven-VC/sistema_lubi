@@ -1,0 +1,131 @@
+{% extends './base2.html' %}
+{% block title %}STI Universia{% endblock %}
+{% block customCSS %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+{% block body %}
+
+<!-- temas cards -->
+<div class="container" id="product-cards">
+    <h1 class="text-center" style="font-weight: bold;">INTRODUCCIÓN</h1>
+    <div class="row" style="margin-top: 30px;">
+        <div class="col-md-3 py-3 py-md-0">
+            <div class="card">
+                <img src="{{ url_for('static', filename='img/pscode.png') }}" alt="">
+                <div class="card-body">
+                    <h3 class="text-center">¿Qué es un algoritmo?</h3>
+                    <p class="" style="text-align: justify; font-size: 14px;">
+                        Inicia conociendo desde lo más basico para que puedas empezar a programar
+                        <br>
+                        <br>
+                    </p>
+                    <h2>Ver
+                        <span>
+                            <a href="tema1-1">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                        </span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+            <div class="card">
+                <img src="{{ url_for('static', filename='img/diagrama1.png') }}" alt=""
+                    style="width: 64%; display: block; margin: 0 auto;">
+                <div class="card-body">
+                    <h3 class="text-center">Diagrama de flujo</h3>
+                    <p class="" style="text-align: justify; font-size: 14px;">
+                        Representación gráfica de un algoritmo con símbolos y flechas para visualizar la secuencia de pasos.
+                    </p>
+                    <h2>Ver
+                        <span>
+                            <a href="tema1-2">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                        </span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+            <div class="card">
+                <img src="{{ url_for('static', filename='img/expresiones.png') }}" alt=""
+                    style="width: 100%; display: block; margin: 0 auto;">
+                <div class="card-body">
+                    <h3 class="text-center">Expresiones</h3>
+                    <p class="" style="text-align: justify; font-size: 14px;">
+                        Combinación de distintas variables, constantes,
+                        operadores, paréntesis y nombres de funciones
+                    </p>
+                    <h2>Ver
+                        <span>
+                            <a href="tema1-3">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                        </span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+            <div class="card">
+                <img src="{{ url_for('static', filename='img/ejercicios1.jpg') }}" alt=""
+                    style="width: 95%; display: block; margin: 0 auto;">
+                <div class="card-body">
+                    <h3 class="text-center">VARIABLES</h3>
+                    <p class="" style="text-align: justify; font-size: 14px;">
+                        Conjunto de valores junto con las operaciones
+                        sobre esos valores.
+                    </p>
+                    <h2>Ver
+                        <span>
+                            <a href="tema1-4">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                        </span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- temas cards -->
+
+<!-- temas cards -->
+<div class="container" id="product-cards">
+    <div class="row" style="margin-top: 30px;">
+        <div class="col-md-3 py-3 py-md-0">
+            <div class="card">
+                <img src="{{ url_for('static', filename='img/ejercicios1.jpg') }}" alt=""
+                    style="width: 90%; display: block; margin: 0 auto;">
+                <div class="card-body">
+                    <h3 class="text-center">EJERCICIOS</h3>
+                    <p class="" style="text-align: justify; font-size: 14px;">
+                        Ejercicios de muestra donde verás todo lo aprendido anteriormente
+                    </p>
+                    <h2>Ver
+                        <span>
+                            <a href="tema1-3">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                        </span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- temas cards -->
+
+<!-- row siguiente -->
+<div class="container" style="position: relative;">
+    <a href="tema2" class="" style="position: absolute; top: 20px; right: 20px;">
+        <i> <img src="{{ url_for('static', filename='img/right-arrow.PNG') }}" alt=""></i>
+    </a>
+</div>
+<!-- row siguiente -->
+
+{% endblock %}

@@ -1,0 +1,168 @@
+{% extends './base2.html' %}
+{% block title %}STI Universia{% endblock %}
+{% block customCSS %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+
+{% block body %}
+<!-- home content -->
+<section class="home">
+    <div class="content" style="justify-content: center;">
+        <h1><span>Sistema Tutor Inteligente</span><br>¡Mejora tu aprendizaje con <span id="span2">IA</span>!</h1>
+        <p>Descubre nuestro Sistema Tutor Inteligente. Tu camino hacia la excelencia en programación.</p>
+    </div>
+    <div class="img d-none d-lg-block">
+        <img src="{{ url_for('static', filename='img/logo_universia.png') }}" alt="" style="width: 70%;">
+    </div>
+</section>
+<!-- home content -->
+
+<!-- body 1 -->
+<div class="container" id="product-cards">
+    <h1 class="text-center" style="font-weight: bold;">SOBRE LA PÁGINA</h1>
+    <div class="row" style="margin-top: 30px;">
+        <div class="col-md-7 py-7 py-md-0">
+            <div class="card">
+                <img src="{{ url_for('static', filename='img/img_card1.png') }}" alt="">
+            </div>
+        </div>
+        <div class="col-md-5 py-5 py-md-0">
+            <div class="card">
+                <div class="card-body" id="text-card">
+                    <p class="" style="font-size: 13.1px; text-align: justify;">
+                        Universia STI, está comprometido a hacer que el proceso de aprendizaje de
+                        programación sea accesible y efectivo para todos. Esta plataforma ha sido cuidadosamente
+                        diseñada para ayudarte a adquirir habilidades de programación de manera comprensible y práctica.
+                        <br>
+                        <br>
+                        La visión es eliminar las barreras que a menudo dificultan el aprendizaje de la
+                        programación. Se ha creado un entorno interactivo y amigable que se adapta a tus necesidades
+                        individuales. Ya sea que seas un principiante absoluto o tengas algo de experiencia, Universia
+                        STI te guiará en cada paso del camino.
+                        <br>
+                        <br>
+                        Únete en este emocionante viaje de aprendizaje y descubre cómo Universia STI
+                        puede marcar la diferencia en tu camino hacia la programación y el pensamiento computacional.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- body 1 -->
+
+<!-- body 2 -->
+<div class="container" id="offer">
+    <div class="row">
+        <div class="col-md-3 py-3 py-md-0">
+            <i class="fa-solid fa-code-branch" style="margin-bottom: 10px;"></i>
+            <h3>Inteligencia Artificial</h3>
+            <p>Usamos un sistema de lógica difusa para realizar recomendaciones personalizadas</p>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+            <i class="fa-solid fa-rotate-left" style="margin-bottom: 27px;"></i>
+            <h3>Retroalimentación</h3>
+            <p>Contamos con materiales accesibles en todo momentos para su aprendizaje</p>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+            <i class="fa-solid fa-tools" style="margin-bottom: 27px;"></i>
+            <h3>Personalizado</h3>
+            <p>Cada usuario puede avanzar a su ritmo sin presiones y recibirá recomendaciones según su desempeño</p>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+            <i class="fa-solid fa-thumbs-up" style="margin-bottom: 27px;"></i>
+            <h3>Verificado</h3>
+            <p>Contenido verificado por expertos en el tema</p>
+        </div>
+    </div>
+</div>
+<!-- body 2 -->
+
+<!-- temas cards -->
+<div class="container" id="product-cards">
+    <h1 class="text-center"  style="font-weight: bold;">ALGUNOS TEMAS</h1>
+    <div class="row" style="margin-top: 30px;">
+        <div class="col-md-3 py-3 py-md-0">
+            <div class="card">
+                <img src="{{ url_for('static', filename='img/intro.jpg') }}" alt="">
+                <div class="card-body">
+                    <h3 class="text-center">Introducción</h3>
+                    <p class="" style="text-align: justify;">
+                        Tu punto de partida en el mundo de la programación, donde descubrirás los
+                        fundamentos esenciales para crear programas y desarrollar tus habilidades lógicas.
+                    </p>
+                    <h2>Ver
+                        <span>
+                            <a href="tema1">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                        </span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+            <div class="card">
+                <img src="{{ url_for('static', filename='img/ifelse.jpg') }}" alt="">
+                <div class="card-body">
+                    <h3 class="text-center">Condicionales</h3>
+                    <p class="" style="text-align: justify;">
+                        Estructura de decisión en programación: ejecuta un bloque de código si se
+                        cumple una condición ("if") o un bloque alternativo si no se cumple ("else").
+                    </p>
+                    <h2>Ver
+                        <span>
+                            <a href="tu_url_aqui">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                        </span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+            <div class="card">
+                <img src="{{ url_for('static', filename='img/while.jpg') }}" alt="">
+                <div class="card-body">
+                    <h3 class="text-center">While</h3>
+                    <p class="" style="text-align: justify;">
+                        Un bucle que se repite mientras se cumple una condición
+                        específica. Es ideal para ejecutar un conjunto de instrucciones cuando se satisfacen ciertas
+                        circunstancias.
+                    </p>
+                    <h2>Ver
+                        <span>
+                            <a href="tu_url_aqui">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                        </span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+            <div class="card">
+                <img src="{{ url_for('static', filename='img/for.jpg') }}" alt="" style="width: 100%;">
+                <div class="card-body">
+                    <h3 class="text-center">For</h3>
+                    <p class="" style="text-align: justify;">
+                        Un bucle que se usa para repetir un bloque de
+                        código un número específico de veces. Es eficaz para recorrer colecciones de datos, como listas
+                        o matrices.
+                    </p>
+                    <h2>Ver
+                        <span>
+                            <a href="tu_url_aqui">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                        </span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- temas cards -->
+
+{% endblock %}

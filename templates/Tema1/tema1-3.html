@@ -1,0 +1,126 @@
+{% extends './base2.html' %}
+{% block title %}STI Universia{% endblock %}
+{% block customCSS %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+{% block body %}
+
+<!-- boddy 1 -->
+<div class="container" id="product-cards">
+    <h1 class="text-center" style="font-weight: bold;">EXPRESIONES</h1>
+    <div class="row" style="margin-top: 30px;">
+        <div class="col-md-7 py-7 py-md-0">
+            <div class="card">
+                <img src="{{ url_for('static', filename='img/expresiones.png') }}" alt=""
+                    style="width: 64%; margin: 0 auto;">
+            </div>
+        </div>
+        <div class="col-md-5 py-5 py-md-0">
+            <div class="card">
+                <div class="card-body" id="text-card">
+                    <p class="" style="font-size: 16px; text-align: justify;">
+                        Toda expresión tiene en todo momento un valor concreto que es el
+                        resultado de evaluarla de izquierda a derecha, siempre teniendo en
+                        cuenta la precedencia de los operadores y los paréntesis que
+                        aparecen en la expresión
+                        <br>
+                        <br>
+                        El valor devuelto tras la evaluación de una expresión determina el
+                        tipo de la expresión (entera, lógica …)
+                    </p>
+                    <h2 style="text-align: justify;  font-size: 25px;">Ejemplos</h2>
+                    <li style="text-align: justify; font-size: 16px;">5+6-5*2</li>
+                    <li style="text-align: justify; font-size: 16px;">(5+6-5)*2</li>
+                    <li style="text-align: justify; font-size: 16px;">(A<0) OR B AND C</li>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- boddy 1 -->
+
+<!-- boddy 3 -->
+<div class="container" id="product-cards">
+    <h1 class="text-center" style="font-weight: bold; color: #ffc800; border-bottom: none;">
+        TIPOS DE EXPRESIONES
+    </h1>
+    <div class="row" style="margin-top: 30px;">
+        <div class="col-md-2 py-3 py-md-0"></div>
+        <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+                <div class="card-body">
+                    <h2 style="text-align: center;  font-size: 25px;">Expresiones algebraicas</h2>
+                    <p class="" style="text-align: justify; font-size: 14px;">
+                        Es un conjunto de símbolos, números o variables utilizados en
+                        matemática para representar relaciones aritméticas. El
+                        termino algebraico es utilizado en matemáticas pero la
+                        computadora es incapaz de reconocer dicha simbología. Una
+                        expresión simple es.
+                    </p>
+                    <h3>(ax2 + bx = c)</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+                <div class="card-body">
+                    <h2 style="text-align: center;  font-size: 25px;">Expresiones algorítmicas</h2>
+                    <p class="" style="text-align: justify; font-size: 14px;">
+                        Conjunto de símbolos, números o variables que
+                        representan una instrucción específica y computable
+                        para el computador. Las expresiones algorítmicas son
+                        utilizadas en los lenguajes de programación para
+                        especificar claramente cuál es el orden y el tipo de
+                        operación a realizar por el computador.
+                    </p>
+                    <h3>(a * x^2 + b * x = c)</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2 py-3 py-md-0"></div>
+
+</div>
+<!-- boddy 3 -->
+
+<!-- boddy 3 -->
+<div class="container" id="product-cards">
+    <h1 class="text-center" style="font-weight: bold; color: #ffc800; border-bottom: none;">
+        CONVERTIR EXPRESIONES</h1>
+    <div class="row" style="margin-top: 30px;">
+        <div class="col-md-7 py-7 py-md-0">
+            <div class="card">
+                <img src="{{ url_for('static', filename='img/expresiones2.PNG') }}" alt=""
+                    style="width: 90%; margin: 0 auto;">
+            </div>
+        </div>
+        <div class="col-md-5 py-5 py-md-0">
+            <div class="card">
+                <img src="{{ url_for('static', filename='img/expresiones3.png') }}" alt=""
+                    style="width: 100%; display: block; margin: 0 auto;">
+                <div class="card-body" id="text-card">
+                    <p class="" style="font-size: 16px; text-align: justify;">
+                        Ya teniendo claro las definiciones anteriores del
+                        conocimiento básico de cada expresión algebraica y
+                        algorítmica, y de los operadores aritméticos, se debe
+                        tener en cuenta su prioridad en los operadores de
+                        manera que el lenguaje máquina los interprete
+                        correctamente.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- boddy 3 -->
+
+<!-- row siguiente -->
+<div class="container" style="position: relative;">
+    <a href="tema1-4" class="arrow" style="position: absolute; top: 20px; right: 20px;">
+        <i> <img src="{{ url_for('static', filename='img/right-arrow.PNG') }}" alt=""></i>
+    </a>
+</div>
+<!-- row siguiente -->
+
+{% endblock %}

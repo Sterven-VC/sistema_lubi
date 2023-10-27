@@ -1,0 +1,66 @@
+{% extends './base2.html' %}
+{% block title %}STI Universia{% endblock %}
+{% block customCSS %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+{% block body %}
+
+<!-- boddy 1 -->
+<div class="container" id="product-cards">
+    <h1 class="text-center" style="font-weight: bold;">DIAGRAMA DE FLUJO</h1>
+    <div class="row" style="margin-top: 30px;">
+        <div class="col-md-7 py-7 py-md-0">
+            <div class="card">
+                <img src="{{ url_for('static', filename='img/diagrama2.jpg') }}" alt=""
+                    style="width: 74%; margin: 0 auto;">
+            </div>
+        </div>
+        <div class="col-md-5 py-5 py-md-0">
+            <div class="card">
+                <div class="card-body" id="text-card">
+                    <p class="" style="font-size: 16px; text-align: justify;">
+                        Un diagrama de flujo (flowchart) es una de las técnicas de representación de 
+                        algoritmo más antigua y a la vez más utilizada, aunque su empleo ha disminuido
+                        considerablemente, sobre todo desde la aparición de lenguajes de programación 
+                        estructurados.
+                        <br>
+                        <br>
+                        Un diagrama de flujo es un diagrama que utiliza los símbolos (cajas) estándar que 
+                        tiene los pasos del algoritmo escritos en esas cajas unidas por flechas, 
+                        denominadas líneas de flujo, que indican la secuencia en que se deben ejecutar.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- boddy 1 -->
+
+<!-- boddy 2 -->
+<div class="container" id="product-cards">
+    <h1 class="text-center" style="font-weight: bold; color: #ffc800; border-bottom: none;">
+        Estructura de un diagrama de flujo</h1>
+    <div class="row" style="margin-top: 30px;">
+        <div class="col-md-6 py-6 py-md-0">
+            <div class="card">
+                <img src="{{ url_for('static', filename='img/diagrama3.png') }}" alt="" style="width: 100%; margin: 0 auto;">
+            </div>
+        </div>
+        <div class="col-md-6 py-6 py-md-0">
+            <div class="card">
+                <img src="{{ url_for('static', filename='img/diagrama4.png') }}" alt="" style="width: 56%; margin: 0 auto;">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- boddy 2 -->
+
+<!-- row siguiente -->
+<div class="container" style="position: relative;">
+    <a href="tema1-3" class="arrow" style="position: absolute; top: 20px; right: 20px;">
+        <i> <img src="{{ url_for('static', filename='img/right-arrow.PNG') }}" alt=""></i>
+    </a>
+</div>
+<!-- row siguiente -->
+
+{% endblock %}

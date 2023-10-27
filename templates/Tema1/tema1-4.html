@@ -1,0 +1,125 @@
+{% extends './base2.html' %}
+{% block title %}STI Universia{% endblock %}
+{% block customCSS %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+{% block body %}
+
+<!-- boddy 1 -->
+<div class="container" id="product-cards">
+    <h1 class="text-center" style="font-weight: bold;">TIPOS DE DATOS</h1>
+    <div class="row" style="margin-top: 30px;">
+        <div class="col-md-7 py-7 py-md-0">
+            <div class="card">
+                <img src="{{ url_for('static', filename='img/datos1.png') }}" alt=""
+                    style="width: 100%; margin: 0 auto;">
+            </div>
+        </div>
+        <div class="col-md-5 py-5 py-md-0">
+            <div class="card">
+                <div class="card-body" id="text-card">
+                    <h2 style="text-align: justify;  font-size: 25px;">Tipo entero:</h2>
+                    <li style="text-align: justify; font-size: 16px;">Conjunto de los números enteros positivos y
+                        negativos</li>
+                    <li style="text-align: justify; font-size: 16px;">Operaciones básicas: aritméticas, relacionales
+                    </li>
+                    <h2 style="text-align: justify;  font-size: 25px;">Tipo real:</h2>
+                    <li style="text-align: justify; font-size: 16px;">Conjunto de los números reales positivos y
+                        negativos (parte entera y parte decimal separada por un punto)</li>
+                    <li style="text-align: justify; font-size: 16px;">Operaciones básicas: aritméticas, relacionales
+                    </li>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- boddy 1 -->
+
+<!-- boddy 3 -->
+<div class="container" id="product-cards">
+    <h1 class="text-center" style="font-weight: bold; color: #ffc800; border-bottom: none;">
+        ELEMENTOS DE UN PROGRAMA
+    </h1>
+    <div class="row" style="margin-top: 30px;">
+        <div class="col-md-2 py-3 py-md-0"></div>
+        <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+                <div class="card-body">
+                    <h2 style="text-align: center;  font-size: 25px;">Constante</h2>
+                    <p class="" style="text-align: justify; font-size: 14px;">
+                        En programación, una
+                        constante es un valor que no
+                        puede ser alterado durante la
+                        ejecución de un programa.
+                        <br>
+                        <br>
+                        Una constante corresponde a
+                        una longitud fija de un área
+                        reservada en la memoria
+                        principal, donde el programa
+                        almacena valores fijos.
+                        <br>
+                        <br>
+                        Por ejemplo:
+                    </p>
+                    <h3>El valor de PI = 3.1416</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+                <div class="card-body">
+                    <h2 style="text-align: center;  font-size: 25px;">Variable</h2>
+                    <p class="" style="text-align: justify; font-size: 14px;">
+                        Posición de memoria que posee valor,
+                        tipo, nombre (identificador), tamaño.
+                    <h2 style="text-align: justify;  font-size: 15px;">Identificador de variable</h2>
+                    <p class="" style="text-align: justify; font-size: 14px;">
+                        <li style="text-align: justify; font-size: 14px;">Operaciones básicas: aritméticas, relacionales
+                            inicia con letra minúscula, sigue con letra, dígito, guión bajo ( _ ).
+                        </li>
+                        <li style="text-align: justify; font-size: 14px;">
+                            Si el identificador tiene más de una
+                            palabra la primera letra de cada palabra
+                            (a partir de la segunda) se escribirá con
+                            mayúscula
+                        </li>
+                    </p>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2 py-3 py-md-0"></div>
+
+</div>
+<!-- boddy 3 -->
+
+<!-- boddy 3 -->
+<div class="container" id="product-cards">
+    <div class="row" style="margin-top: 30px;">
+        <div class="col-md-6 py-6 py-md-0">
+            <div class="card">
+                <img src="{{ url_for('static', filename='img/datos2.png') }}" alt=""
+                    style="width: 100%; margin: 0 auto;">
+            </div>
+        </div>
+        <div class="col-md-6 py-6 py-md-0">
+            <div class="card">
+                <img src="{{ url_for('static', filename='img/datos3.png') }}" alt=""
+                    style="width: 81%; display: block; margin: 0 auto;">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- boddy 3 -->
+
+<!-- row siguiente -->
+<div class="container" style="position: relative;">
+    <a href="tema1-3" class="arrow" style="position: absolute; top: 20px; right: 20px;">
+        <i> <img src="{{ url_for('static', filename='img/right-arrow.PNG') }}" alt=""></i>
+    </a>
+</div>
+<!-- row siguiente -->
+
+{% endblock %}

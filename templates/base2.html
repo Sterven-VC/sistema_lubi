@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--     """ post back """
+ -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <script src="{{ url_for('static', filename='js/prevent-back.js') }}"></script>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    {% block customCSS %}
+    {% endblock %}
+</head>
+
+<body class="text-center">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg" id="navbar" style="background-color: #003d61;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home" id="logo"><span id="span1">U</span>niversia <span>STI</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span>
+                    <img src="{{ url_for('static', filename='img/menu.png') }}" alt="" width="30px">
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="evaluaciones.html">Evaluaciones</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Temas
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #003d61;">
+                            <li><a class="dropdown-item" href="tema1">Tema 1 - Introducción</a></li>
+                            <li><a class="dropdown-item" href="tema2">Tema 2 - Condicionales</a></li>
+                            <li><a class="dropdown-item" href="tema3">Tema 3 - While</a></li>
+                            <li><a class="dropdown-item" href="tema4">Tema 4 - For</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contacto</a>
+                    </li>
+                </ul>
+                <form class="d-flex flex-column flex-lg-row" id="search">
+                    <a href="perfil" class="btn btn-warning rounded-pill mb-2 mb-lg-0 me-lg-2">Perfil</a>
+                    <a href="{{ url_for('logout') }}" class="btn btn-danger rounded-pill">Cerrar sesión</a>
+                </form>
+
+
+            </div>
+        </div>
+    </nav>
+    <!-- navbar -->
+    {% block body %}
+    {% endblock %}
+    <!-- footer -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 footer-contact">
+                        <h3>Contacta directamente</h3>
+                        <p>Ante problemas con la página, no dudes en contactarte</p>
+                        <strong>Email:</strong> steven.vera.carranza@gmail.com <br>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 footer-contact">
+                        <h3>Redes sociales</h3>
+                        <p>Explora la comunidad del colegio Universia</p>
+
+                        <div class="socail-links mt-3">
+                            <a href="https://www.facebook.com/ieuniversia" target="_blank"><i
+                                    class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/iepuniversia/" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container py-4">
+            <div class="copyright">
+                &copy; Copyright <strong><span>Universia STI</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+                Desarrollado por <a href="https://www.linkedin.com/in/steven-vera-carranza-a5b4a8203"
+                    target="_blank">Steven</a>
+            </div>
+        </div>
+    </footer>
+    <!-- footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+{% extends './base2.html' %}
+{% block title %}STI Universia{% endblock %}
+{% block customCSS %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+{% block body %}
+
+<!-- boddy 1 -->
+<div class="container" id="product-cards">
+    <h1 class="text-center" style="font-weight: bold;">¿QUÉ ES UN ALGORITMO?</h1>
+    <div class="row" style="margin-top: 30px;">
+        <div class="col-md-7 py-7 py-md-0">
+            <div class="card">
+                <img src="{{ url_for('static', filename='img/material1.PNG') }}" alt=""
+                    style="width: 67%; margin: 0 auto;">
+            </div>
+        </div>
+        <div class="col-md-5 py-5 py-md-0">
+            <div class="card">
+                <div class="card-body" id="text-card">
+                    <p class="" style="font-size: 16px; text-align: justify;">
+                        Un algoritmo es una secuencia ordenada de pasos, exenta de ambigüedad,
+                        que permite la resolución de un problema determinado
+                        <br>
+                    <h2 style="text-align: justify;  font-size: 25px;">Características de un algoritmo</h2>
+                    <li style="text-align: justify; font-size: 16px;">Preciso: exento de ambigüedad.</li>
+                    <li style="text-align: justify;  font-size: 16px;">Finito: si se sigue el algoritmo, se debe terminar
+                        en algún momento.</li>
+                    <li style="text-align: justify;  font-size: 16px;">Definido: si se sigue dos veces el algoritmo con los
+                        mismo datos de entrada, la salida debe ser la misma.</li>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- boddy 1 -->
+
+<!-- boddy 2 -->
+<div class="container" id="product-cards">
+    <h1 class="text-center" style="font-weight: bold; color: #ffc800; border-bottom: none;">Algoritmos en actividades
+        diarias</h1>
+    <div class="row" style="margin-top: 30px;">
+        <div class="col-md-7 py-7 py-md-0">
+            <div class="card">
+                <img src="{{ url_for('static', filename='img/ejm1.PNG') }}" alt="" style="width: 77%; margin: 0 auto;">
+            </div>
+        </div>
+        <div class="col-md-5 py-5 py-md-0">
+            <div class="card">
+                <div class="card-body" id="text-card">
+                    <p class="" style="font-size: 16px; text-align: justify;">
+                        Un algoritmo es una secuencia ordenada de pasos,
+                        exenta de ambigüedad, que permite la resolución de un
+                        problema determinado
+                        <br>
+                        <li style="text-align: justify; font-size: 16px;">Los manuales de usuarios que muestran
+                            algoritmos para usar algún aparato tecnológico, electrodoméstico, etc.</li>
+                        <li style="text-align: justify;  font-size: 16px;">Las instrucciones que recibe un
+                            trabajador por parte de su jefe.</li>
+                        <li style="text-align: justify;  font-size: 16px;">Los pasos para preparar un determinado
+                            plato.</li>
+                    </p>
+                    <p class="" style="font-size: 16px; text-align: justify;">
+                        Son fundamentales para la toma de decisiones y la ejecución de tareas de manera efectiva y
+                        eficiente. Los ejemplos muestran cómo están presentes en numerosos
+                        aspectos de nuestras vidas.sss
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- boddy 2 -->
+
+<!-- boddy 3 -->
+<div class="container" id="product-cards">
+    <h1 class="text-center" style="font-weight: bold; color: #ffc800; border-bottom: none;">
+        Herramientas para representar los algoritmos</h1>
+    <div class="row" style="margin-top: 30px;">
+        <div class="col-md-2 py-3 py-md-0"></div>
+        <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+                <img src="{{ url_for('static', filename='img/pscode.png') }}" alt="">
+                <div class="card-body">
+                    <h3 class="text-center">Pseudocódigo</h3>
+                    <p class="" style="text-align: justify; font-size: 14px;">
+                        Una forma de describir un algoritmo en lenguaje humano que se encuentra entre el lenguaje
+                        natural y el código de programación real. Es útil para planificar y comunicar la lógica de un
+                        algoritmo antes de su implementación.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+                <img src="{{ url_for('static', filename='img/diagrama1.png') }}" alt=""
+                    style="width: 64%; display: block; margin: 0 auto;">
+                <div class="card-body">
+                    <h3 class="text-center">Diagrama de flujo</h3>
+                    <p class="" style="text-align: justify; font-size: 14px;">
+                        Gráficos visuales que utilizan símbolos y flechas para representar los pasos y la lógica de un
+                        algoritmo de manera fácil de entender y seguir.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2 py-3 py-md-0"></div>
+
+</div>
+<!-- boddy 3 -->
+
+<!-- row siguiente -->
+<div class="container" style="position: relative;">
+    <a href="tema1-2" class="arrow" style="position: absolute; top: 20px; right: 20px;">
+        <i> <img src="{{ url_for('static', filename='img/right-arrow.PNG') }}" alt=""></i>
+    </a>
+</div>
+<!-- row siguiente -->
+
+{% endblock %}

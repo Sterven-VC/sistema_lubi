@@ -1,0 +1,97 @@
+{% extends './base2.html' %}
+{% block title %}STI Universia{% endblock %}
+{% block customCSS %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+{% block body %}
+
+<!-- temas cards -->
+<div class="container" id="product-cards">
+    <h1 class="text-center" style="font-weight: bold;">CONDICIONALES</h1>
+    <div class="row" style="margin-top: 30px;">
+        <div class="col-md-3 py-3 py-md-0">
+            <div class="card">
+                <img src="{{ url_for('static', filename='img/logo_universia.png') }}" alt="">
+                <div class="card-body">
+                    <h3 class="text-center">Titulo 1</h3>
+                    <p class="" style="text-align: justify; font-size: 14px;">
+                        Concepto 1
+                    </p>
+                    <h2>Ver
+                        <span>
+                            <a href="intro-1">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                        </span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+            <div class="card">
+                <img src="{{ url_for('static', filename='img/logo_universia.png') }}" alt="">
+                <div class="card-body">
+                    <h3 class="text-center">Titulo 2</h3>
+                    <p class="" style="text-align: justify; font-size: 14px;">
+                        Concepto 2
+                    </p>
+                    <h2>Ver
+                        <span>
+                            <a href="#">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                        </span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+            <div class="card">
+                <img src="{{ url_for('static', filename='img/logo_universia.png') }}" alt="">
+                <div class="card-body">
+                    <h3 class="text-center">Titulo 3</h3>
+                    <p class="" style="text-align: justify; font-size: 14px;">
+                        Concepto 3
+                    </p>
+                    <h2>Ver
+                        <span>
+                            <a href="#">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                        </span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+            <div class="card">
+                <img src="{{ url_for('static', filename='img/logo_universia.png') }}" alt="">
+                <div class="card-body">
+                    <h3 class="text-center">Titulo 4</h3>
+                    <p class="" style="text-align: justify; font-size: 14px;">
+                        Concepto 4
+                    </p>
+                    <h2>Ver
+                        <span>
+                            <a href="#">
+                                <i class="fa-solid fa-eye"></i>
+                            </a>
+                        </span>
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- temas cards -->
+
+<!-- row siguiente -->
+<div class="container" style="position: relative;">
+    <a href="tema3" class="" style="position: absolute; top: 20px; right: 20px;">
+        <i> <img src="{{ url_for('static', filename='img/right-arrow.PNG') }}" alt=""></i>
+    </a>
+</div>
+<!-- row siguiente -->
+
+{% endblock %}
